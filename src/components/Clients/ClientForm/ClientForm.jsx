@@ -170,7 +170,7 @@ const ClientForm = () => {
         observacao: formData.observacao,
         status: 'ATIVO',
         // Envia a lista de responsaveis (removendo o ID temporário do frontend)
-        responsaveis: contacts.map(({ id, ...rest }) => rest)
+        responsaveis: contacts.map(({ id: _discard, ...rest }) => rest)
     };
 
     try {
