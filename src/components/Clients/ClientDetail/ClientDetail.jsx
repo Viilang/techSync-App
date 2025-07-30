@@ -190,7 +190,7 @@ const ClientDetail = () => {
                 <ContactHeader>
                   <div>
                     <ContactName $isDarkMode={isDarkMode}>{contact.nome}</ContactName>
-                    <ContactRole $isDarkMode={isDarkMode}>{contact.cargo}</ContactRole>
+                    <ContactRole $isDarkMode={isDarkMode}>{contact.funcao}</ContactRole>
                   </div>
                 </ContactHeader>
                 <ContactDetails $isDarkMode={isDarkMode}>
@@ -215,11 +215,11 @@ const ClientDetail = () => {
         </ContactsSection>
 
         {/* --- SECÇÃO DE OBSERVAÇÕES REINTEGRADA --- */}
-        {client.obs && (
+        {client.observacao && (
           <ObservationsSection $isDarkMode={isDarkMode}>
             <SectionTitle $isDarkMode={isDarkMode}>Observações</SectionTitle>
             <ObservationsText $isDarkMode={isDarkMode}>
-              {client.obs}
+              {client.observacao}
             </ObservationsText>
           </ObservationsSection>
         )}
